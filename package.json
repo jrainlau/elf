@@ -1,6 +1,6 @@
 {
   "name": "elf-css",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a light and clean responsive css framework",
   "main": "index.js",
   "dependencies": {},
