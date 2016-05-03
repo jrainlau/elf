@@ -2,9 +2,206 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+    <title>elf | a light and clean responsive framework</title>
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
+    <link rel="stylesheet" href="./css/elf.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    hello world
+    <main class="elf">
+        <section class="curtain centered" id="elf-cover">
+            <div class="background" id="elf-cover-bg"></div>
+            <div class="layout"></div>
+            <div class="content">
+                <div class="row centered elf-logo">
+                    <img src="./images/elf.png" alt="">
+                </div>
+
+                <div class="row-sm centered elf-slogan">
+                    <h3>一个干净，轻巧的响应式CSS框架。</h3>
+                </div>
+
+                <div class="row-sm centered download-btns">
+                    <a class="btn thick ghost-light width-3">CSS</a>
+                    <a class="btn thick ghost-light width-3">LESS</a>
+                    <a class="btn thick ghost-light width-3">MIN</a>
+                </div>
+
+                <div class="row-sm centered download-btns">
+                    <a href="#!/docs/grid" class="btn thick ghost-light width-3">官方文档</a>
+                </div>
+
+                <div class="links">
+                    <a href="#"><i class="fa fa-github"></i>github</a>
+                    <a href="#"><i class="fa fa-home"></i>blog</a>
+                    <a href="#"><i class="fa fa-commenting"></i>segmentfault</a>
+                    <a href="#"><i class="fa fa-weibo"></i>weibo</a>
+                    <a href="#"><i class="fa fa-coffee"></i>bought me a coffee</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="curtain centered elf-intro" id="elf-intro-1">
+            <div>
+                <h1 class="animated title">响应式栅格</h1>
+                <hr class="crx-line">
+                <div class="img-box">
+                    <img src="./images/devices.png" alt="">
+                </div>
+                <p class="description">
+                    elf使用基于flexbox的响应式栅格系统，只需要添加合适的class名，就能够自动适应多种型号的设备。
+                </p>
+            </div>
+        </section>
+
+        <section class="curtain centered elf-intro" id="elf-intro-2">
+            <div class="content-wrapper">
+                <h1 class="animated title">FLEXBOX特性</h1>
+                <hr class="crx-line">
+                <div class="example">
+                    <div class="row between">
+                        <div class="width-flex-2"></div>
+                        <div class="width-flex-3">between</div>
+                        <div class="width-flex-2"></div>
+                    </div>
+                    <div class="row around">
+                        <div class="width-flex-2"></div>
+                        <div class="width-flex-3">around</div>
+                        <div class="width-flex-2"></div>
+                    </div>
+                    <div class="row centered">
+                        <div class="width-flex-2"></div>
+                        <div class="width-flex-3">centered</div>
+                        <div class="width-flex-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="width-fixed" style="margin-right: 1rem;">fixed</div>
+                        <div class="width-12">
+                            full-screen
+                        </div>
+                    </div>
+                    <div class="row centered vertical-center" style="height: 100px;">
+                        <div class="width-flex-3">vertical-center</div>
+                    </div>
+                </div>
+                <p class="description">
+                    elf利用flexbox的特性，能够轻松实现绚丽的布局效果。
+                </p>
+            </div>
+        </section>
+
+        <section class="curtain centered elf-intro" id="elf-intro-3">
+            <div>
+                <h1 class="animated title">干净，轻巧，高度自定义</h1>
+                <hr class="crx-line">
+                <section class="description">
+                    <div class="row">
+                        <div class="part-desc-box width-4">
+                            <i class="fa fa-heart-o"></i>
+                            <p class="part-description">所有的效果都必须在class名为 <code>.elf</code> 的容器中进行。 这意味着elf不会造成全局污染，你可以方便地设置自己的样式</p>
+                        </div>
+                        <div class="part-desc-box width-4">
+                            <i class="fa fa-paper-plane-o"></i>
+                            <p class="part-description">整个 <code>elf.css</code> 只有29kb，压缩后的 <code>elf.min.css</code> 则更加小巧。 elf专注于移动设备，它精准地限制着自己的大小。</p>
+                        </div>
+                        <div class="part-desc-box width-4">
+                            <i class="fa fa-edit"></i>
+                            <p class="part-description">elf通过less语言编写, 通过修改她的 <code>less</code> 文件, 你可以轻易地定制属于你的样式。elf只帮你把最基本的东西做好，并非全部。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="curtain centered elf-intro" id="elf-intro-4">
+            <div class="content-wrapper">
+                <h1 class="animated title">更多特性</h1>
+                <hr class="crx-line">
+                <div class="description">
+                    <p>- 为未确定数量元素排列而设的<strong>BLOCKS系统</strong>；</p>
+                    <p>- 为统一放置图片而设的<strong>图片处理系统</strong>；</p>
+                    <p>- 为特殊页面展示而设的<strong>巨幕系统</strong>；</p>
+                    <p>- 更为优化的<strong>默认样式</strong>；</p>
+                    <p>- ……</p>
+
+                    <p>更多elf的特性期待您的探索，同时elf也会持续不断地完善与维护。如果您觉得elf不错，欢迎参与到项目当中，一起让elf更加完善，更加精彩。</p>
+                </div>
+                
+                <div class="row centered">
+                    <a href="" class="btn large ghost-dark thick">官方文档</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h6>
+                <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+            </h6>
+            <h6>
+                Copyright © 2016
+                <a href="http://jrainlau.github.io">Jrain Lau</a>
+            </h6>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = function () {
+            var cover = document.getElementById('elf-cover'),
+                bg = document.getElementById('elf-cover-bg')
+
+            var bgLeft = 0,
+                bgTop = 0
+
+            var screenHeight = document.body.clientHeight
+            var rect = bg.getBoundingClientRect()
+            var scrollTop
+
+            cover.addEventListener('mousemove', mouseWatcher)
+
+            function mouseWatcher(e) {
+                if (e.movementX < 0 && bgLeft < 0) {
+                    bgLeft += .1
+                    bg.style.left = bgLeft + 'px'
+                } else if (e.movementX > 0 && bgLeft > -10) {
+                    bgLeft -= .1
+                    bg.style.left = bgLeft + 'px'
+                }
+
+                if (e.movementY < 0 && bgTop < 0) {
+                    bgTop += .1
+                    bg.style.top = bgTop + 'px'
+                } else if (e.movementY > 0 && bgTop > -10) {
+                    bgTop -= .1
+                    bg.style.top = bgTop + 'px'
+                }
+            }
+
+            var titleList = document.querySelectorAll('.title')
+
+            var counter = []
+            for (var i = 0, len = titleList.length; i < len; i++) {
+                counter[i] = 0
+            }
+            var animateObj = 'animated title'
+            window.addEventListener('scroll', showUp)
+            function showUp () {
+                for (var i = 0, len = titleList.length; i < len; i++) {
+                    if (screenHeight - 100 > titleList[i].getBoundingClientRect().top && counter[i] == 0) {
+                        counter[i] = 1
+                        animateObj += ' fadeInUp'
+                        titleList[i].style.visibility = 'visible'
+                        titleList[i].setAttribute('class', animateObj)
+                    } else if (titleList[i].getBoundingClientRect().top > screenHeight && counter[i] != 0) {
+                        counter[i] = 0
+                        animateObj = 'animated title'
+                        titleList[i].style.visibility = 'hidden'
+                        titleList[i].setAttribute('class', animateObj)
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
