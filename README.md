@@ -1,6 +1,5 @@
-<div style="height: 200px; width: 200px; text-align: center;">
-<img src="https://imgly.net/img/AfK.png" alt="elf" style="display:inline-block; width: 100%; ">
-</div>
+![elf-logo](https://imgly.net/img/AfK.png)
+
 官网地址：[http://jrainlau.github.io/elf/](http://jrainlau.github.io/elf/)
 
 # 介绍
