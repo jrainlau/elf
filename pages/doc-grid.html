@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Grid</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="width-12 content">
+                <h1>网格系统</h1>
+                <p class='description'>
+                    elf使用flexbox实现自适应的网格系统。该网格系统基于12列布局，能够分别针对超小屏设备（≤ 568px），小屏设备（≤ 768px），中屏设备（≤ 1080px），大屏设备（≤ 1280px）进行自适应的布局排列。
+                </p>
+                <div class='example'>
+                    <section class="eg">
+                        <h4>超小屏</h4>
+                        <div class="row-sm">
+                            <div class="egs width-1">1</div>
+                            <div class="egs width-11">11</div>
+                        </div>
+                        <div class="row-sm">
+                            <div class="egs width-2">2</div>
+                            <div class="egs width-10">10</div>
+                        </div>
+<div class="codes">
+    <div class="row-sm">...</div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>小屏</h4>
+                        <div class="row">
+                            <div class="egs width-3">3</div>
+                            <div class="egs width-9">9</div>
+                        </div>
+                        <div class="row">
+                            <div class="egs width-4">4</div>
+                            <div class="egs width-8">8</div>
+                        </div>
+<div class="codes">
+    <div class="row">...</div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>中屏</h4>
+                        <div class="row-m">
+                            <div class="egs width-5">5</div>
+                            <div class="egs width-7">7</div>
+                        </div>
+                        <div class="row-m">
+                            <div class="egs width-6">6</div>
+                            <div class="egs width-6">6</div>
+                        </div>
+<div class="codes">
+    <div class="row-m">...</div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>大屏</h4>
+                        <div class="row-l">
+                            <div class="egs width-7">3</div>
+                            <div class="egs width-5">9</div>
+                        </div>
+                        <div class="row-l">
+                            <div class="egs width-8">8</div>
+                            <div class="egs width-4">4</div>
+                        </div>
+<div class="codes">
+    <div class="row-l">...</div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>自适应网格系统</h4>
+                        <div class="row between">
+                            <div class="egs width-2"></div>
+                            <div class="egs width-2">between</div>
+                            <div class="egs width-2"></div>
+                        </div>
+                        <div class="row around">
+                            <div class="egs width-2"></div>
+                            <div class="egs width-2">around</div>
+                            <div class="egs width-2"></div>
+                        </div>
+                        <div class="row centered">
+                            <div class="egs width-2"></div>
+                            <div class="egs width-2">centered</div>
+                            <div class="egs width-2"></div>
+                        </div>
+                        <div class="row centered vertical-center" style="height: 150px; border: 2px solid #ddd;">
+                            <div class="egs width-2">vertical-center</div>
+                        </div>
+<div class="codes">
+    <div class="row between">...</div>
+    <div class="row around">...</div>
+    <div class="row centered">...</div>
+    <div class="row centered vertical-center">...</div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>左侧固定，右侧自适应</h4>
+                        <div class="row">
+                            <div class="egs width-fixed" style="margin-right: 1rem;">固定</div>
+                            <div class="egs width-12">12</div>
+                        </div>
+<div class="codes">
+    <div class="row">
+        <div class="width-fixed">...</div>
+        <div class="width-12">...</div>
+    </div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>嵌套网格</h4>
+                        <div class="row">
+                            <div class="width-4">
+                                <div class="row inside">
+                                    <div class="egs width-6">6</div>
+                                    <div class="egs width-6">6</div>
+                                </div>
+                            </div>
+                            <div class="width-4">
+                                <div class="row inside">
+                                    <div class="egs width-4">4</div>
+                                    <div class="egs width-4">4</div>
+                                    <div class="egs width-4">4</div>
+                                </div>
+                            </div>
+                            <div class="egs width-4">2</div>
+                        </div>
+<div class="codes">
+    <div class="row">
+        <div class="width-4">
+            <div class="row inside">
+                <div class="width-6">6</div>
+                <div class="width-6">6</div>
+            </div>
+        </div>
+        <div class="width-4">
+            <div class="row inside">
+                <div class="width-4">4</div>
+                <div class="width-4">4</div>
+                <div class="width-4">4</div>
+            </div>
+        </div>
+        <div class="width-4">2</div>
+    </div>
+</div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>位移网格</h4>
+                        <div class="row">
+                            <div class="egs width-5 offset-7">offset-7</div>
+                        </div>
+<div class="codes">
+    <div class="row">
+        <div class="egs width-5 offset-7">offset-7</div>
+    </div>
+</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+    </div>
+
+    <script>
+    window.onload = function () {
+        'use strict';
+        var classList = document.getElementsByClassName('codes')
+        for(var i = 0, len = classList.length; i < len; i++) {
+            var val = classList[i].innerHTML
+            document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+        }
+    }
+    </script>
+</body>
+</html>

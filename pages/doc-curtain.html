@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Curtain</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <!-- template start -->
+                <h1>巨幕</h1>
+                <p class='description'>
+                    elf的巨幕可以让元素高度100%占满屏幕。elf的首页部分大量使用了巨幕效果。
+                </p>
+                <div class='example'>
+                    <section class="egs-tools">
+                        <h4>示例</h4>
+                        <div class="egs-box">
+                            <p>假设这是一个高度为600px的<code>div</code>盒子（模拟设备屏幕）</p>
+                            <div class="egs-body elf" style="height: 600px; border: 2px solid #aaa;">
+                                <div class="curtain centered">
+                                    <h4>巨幕的高度能够自动占满全屏</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="egs-tools">
+                        <h4>用法</h4>
+                        <p>记住，elf的所有效果都必须在class名为<code>.elf</code>的容器中进行，该容器一般是<code>body</code>的第一代子元素。同样的，巨幕的效果也必须在<code>.elf</code>容器内才能生效。当位于<code>.elf</code>内的子元素添加了<code>.curtain</code>的class名以后，它就是一个巨幕。巨幕高度能够自动100%撑满屏幕。</p>
+                        <p>我们可以在巨幕中添加一个名为<code>.centered</code>的class名，它会让其所包裹的元素自动水平垂直居中于巨幕，方便更多场合的使用。</p>
+
+<div class="codes">
+    <div class="elf">
+
+        <div class="curtain centered">
+            <h4>巨幕的高度能够自动占满全屏</h4>
+        </div>
+
+    </div>
+</div>
+                    </section>
+                </div>
+                <!-- template end -->
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            'use strict';
+            var classList = document.getElementsByClassName('codes')
+            for(var i = 0, len = classList.length; i < len; i++) {
+                var val = classList[i].innerHTML
+                document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+            }
+        }
+      </script>
+</body>
+</html>

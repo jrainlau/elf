@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Blocks</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <h1>BLOCKS系统</h1>
+                <p class='description'>
+                    BLOCKS系统能够方便地让未知个数的元素自动按照一定的顺序排列。elf提供了1列到6列的BLOCKS布局系统，方便用户对文章、图片等展示资源进行排列展示。注意，<code>.blocks-n</code>内的元素必须是<code>div</code>，且不支持设置外边距，若元素之间需要有间距，请通过设置内边距实现。
+                </p>
+                <div class='example'>
+<div class="codes">
+    <!-- n = [2, 6] -->
+
+    <div class="blocks-n">
+        <div>...</div>
+        ...
+        <div>...</div>
+    </div>
+</div>
+                    <section class="eg">
+                        <h4>2列BLOCKS</h4>
+                        <div class="blocks-2">
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>3列BLOCKS</h4>
+                        <div class="blocks-3">
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>4列BLOCKS</h4>
+                        <div class="blocks-4">
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>5列BLOCKS</h4>
+                        <div class="blocks-5">
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="eg">
+                        <h4>6列BLOCKS</h4>
+                        <div class="blocks-6">
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                            <div class="egs-blocks">
+                                <div class="egs-inner">blocks</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            'use strict';
+            var classList = document.getElementsByClassName('codes')
+            for(var i = 0, len = classList.length; i < len; i++) {
+                var val = classList[i].innerHTML
+                document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+            }
+        }
+      </script>
+</body>
+</html>

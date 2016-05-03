@@ -1,0 +1,117 @@
+.menu-box {
+  position: fixed;
+}
+.menu-box ul {
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  list-style: none;
+}
+.menu-box ul li {
+  width: 6rem;
+  padding: 1rem 0;
+  text-align: left;
+}
+.menu-box ul li a {
+  display: inline-block;
+  width: 6rem;
+  color: inherit;
+  text-decoration: none;
+}
+.menu-box ul li a:hover,
+.menu-box ul li a:focus {
+  outline: none;
+}
+.menu-box ul li a:hover + hr,
+.menu-box ul li a:focus + hr {
+  width: 100%;
+  border-top: 2px solid #333;
+}
+.menu-box ul li a.default-link + hr {
+  width: 100%;
+  border-top: 2px solid #333;
+}
+.menu-box ul li hr {
+  width: 0;
+  margin: .5rem 0;
+  border-width: 0;
+  border-top: 2px solid #333;
+  transition: width 500ms ease-out;
+}
+@media (max-width: 768px) {
+  .menu-box {
+    position: relative;
+  }
+  .menu-box ul li {
+    float: left;
+    margin-right: 1.5rem;
+  }
+}
+.content {
+  padding: 0 1rem;
+}
+footer {
+  padding: 0 2rem;
+  text-align: right;
+}
+.description {
+  font-size: 1.2rem;
+  padding: 1rem 0;
+}
+.example {
+  margin-bottom: 2rem;
+}
+.example .codes code {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.eg {
+  margin-bottom: 4rem;
+}
+.example .egs {
+  background-color: #ccc;
+  text-align: center;
+}
+.example .egs-blocks {
+  padding: 1rem;
+}
+.example .egs-blocks .egs-inner {
+  padding: .5rem 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+.example .egs-forms {
+  margin-bottom: 2rem;
+}
+.example .egs-forms .egs-inner {
+  padding: .5rem 1rem;
+  background-color: #eee;
+  text-align: center;
+}
+.example .egs-buttons {
+  margin-bottom: 4rem;
+}
+.example .egs-buttons table td {
+  text-align: center;
+  width: 5%;
+}
+.example .egs-tables {
+  margin-bottom: 4rem;
+}
+.example .egs-tools {
+  margin-bottom: 2rem;
+}
+.example .egs-pics {
+  margin-bottom: 4rem;
+}
+.example .egs-pics .copy-btn {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #aaa;
+}
+.example .egs-pics .copy-btn:hover,
+.example .egs-pics .copy-btn:focus {
+  color: #111111;
+}

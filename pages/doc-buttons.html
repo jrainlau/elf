@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Buttons</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <!-- template start -->
+                <h1>按钮</h1>
+                <p class='description'>
+                    elf中的按钮具备多种样式，且它们都是高度可定制的。
+                </p>
+                <div class='example'>
+                    <section class="egs-buttons">
+                        <h4>基础样式</h4>
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Style</td>
+                                    <td><button>Default</button></td>
+                                    <td><button class="ghost-dark">Dark</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td></td>
+                                    <td><code>ghost-dark</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="egs-buttons">
+                        <h4>按钮组</h4>
+                        <div class='egs-inner'>
+                            <div class="btn-group">
+                                <button class="ghost-dark ">Btn 1</button>
+                                <button class="ghost-dark ">Btn 2</button>
+                                <button class="ghost-dark ">Btn 3</button>
+                            </div>
+                        </div>
+<div class="codes">
+    <div class="btn-group">
+        <button class="ghost-dark ">Btn 1</button>
+        <button class="ghost-dark ">Btn 2</button>
+        <button class="ghost-dark ">Btn 3</button>
+    </div>
+</div>
+                    </section>
+
+                    <section class="egs-buttons">
+                        <h4>圆角按钮</h4>
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Style</td>
+                                    <td><button class="round">Default</button></td>
+                                    <td><button class="ghost-dark round">Ghost</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td><code>round</code></td>
+                                    <td><code>ghost-dark</code>, <code>round</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="egs-buttons">
+                        <h4>大小与边框</h4>
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Style</td>
+                                    <td><button class="small">Small</button></td>
+                                    <td><button>Normal</button></td>
+                                    <td><button class="large">Large</button></td>
+                                    <td><button class="ghost-dark">Normal</button></td>
+                                    <td><button class="thick ghost-dark">Thick</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td><code>small</code></td>
+                                    <td></td>
+                                    <td><code>large</code></td>
+                                    <td><code>ghost-dark</code></td>
+                                    <td><code>thick</code>, <code>ghost-dark</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="egs-buttons">
+                        <h4>反色按钮</h4>
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Style</td>
+                                    <td style="background: #333;"><button class="ghost-light">Light</button></td>
+                                    <td style="background: #333;"><button class="ghost-light ">Light</button></td>
+                                    <td style="background: #333;"><button class="ghost-light round">Light</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td><code>ghost-light</code></td>
+                                    <td><code>ghost-light</code></td>
+                                    <td><code>ghost-light</code>, <code>round</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="egs-buttons">
+                        <h4>禁止选择</h4>
+                        <table class="table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Style</td>
+                                    <td><button disabled>Default</button></td>
+                                    <td><button class="ghost-dark" disabled>Ghost</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Attribute</td>
+                                    <td colspan="7"><code>disabled</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <!-- template end -->
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            'use strict';
+            var classList = document.getElementsByClassName('codes')
+            for(var i = 0, len = classList.length; i < len; i++) {
+                var val = classList[i].innerHTML
+                document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+            }
+        }
+      </script>
+</body>
+</html>

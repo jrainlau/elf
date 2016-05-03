@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Tables</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <!-- template start -->
+                <h1>表格</h1>
+                <p class='description'>
+                    elf提供了多种表格形式，只需要添加一个合适的class名以及少量的自定义属性即可。
+                </p>
+                <div class='example'>
+                    <section class="egs-tables">
+                        <h4>默认样式</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>橡皮</td>
+                                    <td>3.0</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>笔</td>
+                                    <td>3.5</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">合计</td>
+                                    <td>38</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+<div class="codes">
+    <table>
+        <thead>
+            <tr>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>...</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+                    </section>
+
+                    <section class="egs-tables">
+                        <h4>响应式</h4>
+                        <table class="table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="名称">橡皮</td>
+                                    <td data-label="单价">3.0</td>
+                                    <td data-label="数量">18</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="名称">笔</td>
+                                    <td data-label="单价">3.5</td>
+                                    <td data-label="数量">20</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">合计</td>
+                                    <td>38</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+<div class="codes">
+    <table class="table-responsive">
+        <thead>
+            <tr>
+                <th>名称</th>
+                <th>单价</th>
+                <th>数量</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="名称">橡皮</td>
+                <td data-label="单价">3.0</td>
+                <td data-label="数量">18</td>
+            </tr>
+            <tr>
+                <td data-label="名称">笔</td>
+                <td data-label="单价">3.5</td>
+                <td data-label="数量">20</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">合计</td>
+                <td>38</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+                    </section>
+
+                    <section class="egs-tables">
+                        <h4>网格系统</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="width-6">名称</th>
+                                    <th class="width-3">单价</th>
+                                    <th class="width-3">数量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>橡皮</td>
+                                    <td>3.0</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>笔</td>
+                                    <td>3.5</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">合计</td>
+                                    <td>38</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+<div class="codes">
+    <table>
+        <thead>
+            <tr>
+                <th class="width-6">...</th>
+                <th class="width-3">...</th>
+                <th class="width-3">...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                    </section>
+
+                    <section class="egs-tables">
+                        <h4>表格线</h4>
+                        <table class="table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>橡皮</td>
+                                    <td>3.0</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>笔</td>
+                                    <td>3.5</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">合计</td>
+                                    <td>38</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+<div class="codes">
+    <table class="table-bordered">
+        <thead>
+            <tr>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                    </section>
+
+                    <section class="egs-tables">
+                        <h4>条纹表格</h4>
+                        <table class="table-stripped">
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>单价</th>
+                                    <th>数量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>橡皮</td>
+                                    <td>3.0</td>
+                                    <td>18</td>
+                                </tr>
+                                <tr>
+                                    <td>笔</td>
+                                    <td>3.5</td>
+                                    <td>20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+<div class="codes">
+    <table class="table-stripped">
+        <thead>
+            <tr>
+                <th>...</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>...</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+                    </section>
+                </div>
+                <!-- template end -->
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            'use strict';
+            var classList = document.getElementsByClassName('codes')
+            for(var i = 0, len = classList.length; i < len; i++) {
+                var val = classList[i].innerHTML
+                document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+            }
+        }
+      </script>
+</body>
+</html>

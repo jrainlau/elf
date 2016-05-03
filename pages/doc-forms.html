@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Blocks</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <h1>表单</h1>
+                <p class='description'>
+                    elf为表单元素提供了基础的样式，优化了显示效果。
+                </p>
+                <div class='example'>
+                    <section class="egs-forms">
+                        <h4>默认表单</h4>
+                        <form class="forms" style="width: 90%;">
+                            <section>
+                                <label>Email</label>
+                                <input type="email" name="email" />
+                            </section>
+                            <section>
+                                <label>Password</label>
+                                <input type="password" name="password" />
+                            </section>
+                            <section>
+                                <label>Menu</label>
+                                <select class="select">
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                </select>
+                            </section>
+                            <section>
+                                <label>Multiple Menu</label>
+                                <select class="select" multiple>
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                    <option value="">Choose me</option>
+                                </select>
+                            </section>
+                            <section>
+                                <label class="checkbox"><input type="checkbox"> Check me</label>
+                            </section>
+                            <section>
+                                <label class="checkbox"><input type="radio"> Radio me</label>
+                            </section>
+                            <section>
+                                <button>Log in</button> <button>Cancel</button>
+                            </section>
+                        </form>
+<div class="codes">
+    <form class="forms">
+        <section>...</section>
+        <section>...</section> 
+    </form>
+</div>
+                    </section>
+                    
+                    <section class="egs-forms">
+                        <h4>表单集合</h4>
+                        <form class="forms">
+                            <fieldset>
+                                <legend>Login data</legend>
+                                <section>
+                                    <label>Email</label>
+                                    <input type="email" name="user-email" class="width-6"  />
+                                </section>
+                                <section>
+                                    <label>Password</label>
+                                    <input type="password" name="user-password" class="width-6"  />
+                                </section>
+                            </fieldset>
+                        </form>
+<div class="codes">
+    <form class="forms">
+        <fieldset>
+            <legend>Login data</legend>
+            <section>...</section>
+            <section>...</section>
+        </fieldset>
+    </form>
+</div>
+                    </section>
+
+                    <section class="egs-forms">
+                        <h4>输入框样式</h4>
+                        <div>
+                            <div class="row">
+                                <input type="text" class="width-6 input-success">
+                                <input type="text" class="width-6 input-error">
+                            </div>
+<div class="codes">
+    <input type="text" class="width-6 input-success">
+    <input type="text" class="width-6 input-error">
+</div>
+                        </div>
+                        <div>
+                            <input type="text" class="width-6 large">
+                            <br><br>
+                            <input type="text" class="width-6 small">
+<div class="codes">
+    <input type="text" class="width-6 large">
+    <input type="text" class="width-6 small">
+</div>
+                        </div>
+                        <div>
+                            <textarea cols="30" rows="10"></textarea>
+<div class="codes">
+    <textarea cols="30" rows="10"></textarea>
+</div>
+                        </div>
+                    </section>
+
+                    <section class="egs-forms">
+                        <h4>带控件输入框</h4>
+                        <div>
+                            <div class="input-prepend">
+                                <span>$</span>
+                                <input type="text" value="" />
+                            </div>
+<div class="codes">
+    <div class="input-prepend">
+        <span>$</span>
+        <input type="text" value="" />
+    </div>
+</div>
+                        </div>
+                        <div>
+                            <div class="input-append">
+                                <input type="text" value="" />
+                                <span>$</span>
+                            </div>
+<div class="codes">
+    <div class="input-append">
+        <input type="text" value="" />
+        <span>$</span>
+    </div>
+</div>
+                        </div>
+                        <div>
+                            <div class="btn-append">
+                                <input type="text" name="search" placeholder="Search" />
+                                <span>
+                                    <button class="btn">Go</button>
+                                </span>
+                            </div>
+<div class="codes">
+    <div class="btn-append">
+        <input type="text" name="search" placeholder="Search" />
+        <span>
+            <button class="btn">Go</button>
+        </span>
+    </div>
+</div>
+                        </div>
+                    </section>
+
+                    <section class="egs-forms">
+                        <h4>带说明输入框</h4>
+                        <form class="forms">
+                            <label>Email <span class="desc">It's required...</span></label>
+                            <input type="email" name="user-email" class="width-6"  />
+                            <div class="desc">Please enter your email.</div>
+                        </form>
+<div class="codes">
+    <form class="forms">
+        <label>Email <span class="desc">It's required...</span></label>
+        <input type="email" name="user-email" class="width-6"  />
+        <div class="desc">Please enter your email.</div>
+    </form>
+</div>
+                    </section>
+
+                    <section class="egs-forms">
+                        <h4>粗边及圆角输入框</h4>
+                        <input type="text" class="thick">
+                        <br><br>
+                        <input type="text" class="round">
+<div class="codes">
+    <input type="text" class="thick">
+    <input type="text" class="round">
+</div>
+                    </section>
+
+                    <section class="egs-forms">
+                        <h4>幽灵输入框</h4>
+                        <div>
+                            <input type="text" class="line" placeholder="Input...">
+                        </div>
+<div class="codes">
+    <input type="text" class="line">
+</div>
+                        <div style="margin: 1rem 0; padding: 1rem; background: #333;">
+                            <input type="text" class="ghost-light">
+                            <br><br>
+                            <input type="text" class="ghost-light thick">
+                            <br><br>
+                            <input type="text" class="ghost-light line">
+                        </div>
+<div class="codes">
+    <input type="text" class="ghost-light">
+    <input type="text" class="ghost-light thick">
+    <input type="text" class="ghost-light line">
+</div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            'use strict';
+            var classList = document.getElementsByClassName('codes')
+            for(var i = 0, len = classList.length; i < len; i++) {
+                var val = classList[i].innerHTML
+                document.getElementsByClassName('codes')[i].innerHTML = marked(val)
+            }
+        }
+      </script>
+</body>
+</html>

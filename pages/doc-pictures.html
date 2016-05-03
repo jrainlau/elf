@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>elf | Curtain</title>
+    <link rel="stylesheet" href="../css/elf.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/marked.js"></script>
+</head>
+<body>
+    <div class='elf'>
+        <div class="row">
+            <div class="width-fixed" style="margin-right: 1rem;">
+                <div class="menu-box">
+                    <ul>
+                        <li>
+                            <a style="font-weight: bold; text-decoration: underline;" href="../index.html">回到首页</a>
+                        </li>
+                        <li>
+                            <a href="./doc-use.html">使用</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-grid.html">网格系统</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-blocks.html">BLOCKS</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-forms.html">表单</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-buttons.html">按钮</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-tables.html">表格</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a href="./doc-curtain.html">巨幕</a>
+                            <hr>
+                        </li>
+                        <li>
+                            <a class="default-link" href="./doc-pictures.html">图片处理</a>
+                            <hr>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="width-12 content">
+                <!-- template start -->
+                <h1>图片处理</h1>
+                <p class='description'>
+                    有时候我们需要对不同比例和大小的图片进行排列，例如相册。elf提供的图片处理功能能够让图片都能以它自己的比例放置在确定大小的容器中，也可以截取图片的居中部分进行展示。
+                </p>
+                <div class='example'>
+                    <section class="egs-pics">
+                        <h4>原比例放置图片</h4>
+                        <div class="row">
+                            <div class="width-6">
+                                <p>示例图片1：
+                                    <a href="https://imgly.net/img/AQ8.jpg" target="blank">https://imgly.net/img/AQ8.jpg</a>
+                                    <a class="copy-btn" href="javascript:void(0);">copy</a>
+                                </p>
+                                <p>示例图片2：
+                                    <a href="https://imgly.net/img/AQR.jpg" target="blank">https://imgly.net/img/AQR.jpg</a>
+                                    <a class="copy-btn" href="javascript:void(0);">copy</a>
+                                </p>
+                                <p>粘贴图片地址到以下位置查看效果</p>
+                                <div class="btn-append">
+                                    <input id="input-1" type="text" placeholder='请粘贴图片url' style="width: 80%;">
+                                    <span>
+                                        <button class="url-btn">Go</button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4>用法</h4>
+                                    <p>只需要在图片的容器中添加<code>.pics-contain</code>的class名即可。</p>
+                                </div>
+                            </div>
+                            <div class="width-6">
+                                <p>这是一个宽高均为200px的容器，里面放置图片</p>
+                                <div class="pics-contain" style="width: 200px; height: 200px; border: 2px solid #aaa;">
+                                    <img id="img-1" src="https://imgly.net/img/AQ8.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="egs-pics">
+                        <h4>居中截取图片</h4>
+                        <div class="row">
+                            <div class="width-6">
+                                <p>示例图片1：
+                                    <a href="https://imgly.net/img/AQ8.jpg" target="blank">https://imgly.net/img/AQ8.jpg</a>
+                                    <a class="copy-btn" href="javascript:void(0);">copy</a>
+                                </p>
+                                <p>示例图片2：
+                                    <a href="https://imgly.net/img/AQR.jpg" target="blank">https://imgly.net/img/AQR.jpg</a>
+                                    <a class="copy-btn" href="javascript:void(0);">copy</a>
+                                </p>
+                                <p>粘贴图片地址到以下位置查看效果</p>
+                                <div class="btn-append">
+                                    <input id="input-2" type="text" placeholder='请粘贴图片url' style="width: 80%;">
+                                    <span>
+                                        <button class="url-btn">GO</button>
+                                    </span>
+                                </div>
+                                <div>
+                                    <h4>用法</h4>
+                                    <p>只需要在图片的容器中添加<code>.pics-center</code>的class名即可。</p>
+                                </div>
+                            </div>
+                            <div class="width-6">
+                                <p>这是一个宽高均为200px的容器，里面放置图片</p>
+                                <div class="pics-center" style="width: 200px; height: 200px; border: 2px solid #aaa;">
+                                    <img id="img-2" src='https://imgly.net/img/AQR.jpg' alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- template end -->
+            </div>
+        </div>
+
+        <footer>
+          <h6>
+            <a href="https://opensource.org/licenses/MIT">MIT LICENCE</a>
+          </h6>
+          <h6>
+          Copyright © 2016
+          <a href="http://jrainlau.github.io">Jrain Lau</a>
+          </h6>
+        </footer>
+      </div>
+
+      <script>
+        window.onload = function () {
+            var copyBtn = document.querySelectorAll('.copy-btn')
+            var input1 = document.getElementById('input-1'),
+                input2 = document.getElementById('input-2'),
+                img1 = document.getElementById('img-1'),
+                img2 = document.getElementById('img-2'),
+                btn = document.querySelectorAll('.url-btn')
+
+            copyBtn[0].onclick = function () {
+                input1.value = 'https://imgly.net/img/AQ8.jpg'
+            }
+            copyBtn[1].onclick = function () {
+                input1.value = 'https://imgly.net/img/AQR.jpg'
+            }
+            copyBtn[2].onclick = function () {
+                input2.value = 'https://imgly.net/img/AQ8.jpg'
+            }
+            copyBtn[3].onclick = function () {
+                input2.value = 'https://imgly.net/img/AQR.jpg'
+            }
+
+            btn[0].onclick = function () {
+                var theUrl = input1.value
+                img1.setAttribute('src', theUrl)
+            }
+            btn[1].onclick = function () {
+                var theUrl = input2.value
+                img2.setAttribute('src', theUrl)
+            }
+        }
+      </script>
+</body>
+</html>
