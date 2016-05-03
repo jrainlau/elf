@@ -9,13 +9,14 @@
 # 使用
 安装
 
-> `npm install elf-css`
+ `npm install elf-css`
 
 elf是纯粹的css框架，首先需要在页面中引入`elf.css`：
-> `<link rel="stylesheet" href="elf.css" />`
+
+ `<link rel="stylesheet" href="elf.css" />`
 
 然后添加一个叫做`.elf`的class名到父容器上：
-> 
+
 ```
 <main class="elf">
   ...
