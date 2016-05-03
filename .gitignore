@@ -1,5 +1,7 @@
 /demo
 /highlight
 /node_modules
+/pages
 .project
 gulpfile.js
+.gitignore
