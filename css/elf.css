@@ -1379,6 +1379,7 @@ body {
 .elf .btn-append button,
 .elf .btn-append .btn {
   flex: 1;
+  font-size: 1.2rem;
   border-radius: 0 4px 4px 0;
 }
 /*

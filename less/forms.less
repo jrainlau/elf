@@ -34,7 +34,7 @@
         border-radius: @input-base-radius;
         
         font-family: @font-family;
-        font-size: 1.2rem;
+        font-size: @input-base-font-size;
         color: @font-color;
         
         transition: border 500ms ease;
@@ -109,7 +109,7 @@
         
         line-height: 0;
 
-        font-size: 1.2rem;
+        font-size: @input-base-font-size;
         text-transform: uppercase;
     }
 
@@ -136,7 +136,7 @@
         }
         & label {
             display: block;
-            font-size: 1.2rem;
+            font-size: @input-base-font-size;
             &.checkbox {
                 text-transform: none;
                 font-weight: normal;
@@ -280,7 +280,7 @@
 
             font-weight: normal;
             color: @font-color;
-            font-size: 1.2rem;
+            font-size: @input-base-font-size;
             white-space: nowrap;
         }
     }
@@ -321,6 +321,7 @@
         & button,
         & .btn {
             flex: 1;
+            font-size: @input-base-font-size;
             border-radius: 0 @input-base-radius @input-base-radius 0;
         }
     }
