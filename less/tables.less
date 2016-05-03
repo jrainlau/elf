@@ -1,0 +1,109 @@
+/*
+ * Tables
+ */
+.elf {
+    table {
+        max-width: 100%;
+        width: 100%;
+        empty-cells: show;
+        border-collapse:collapse;
+
+        caption {
+            text-transform: uppercase;
+            padding: 0;
+            color: #000;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            font-size: 1rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .05);
+            padding: 1.2rem;
+            padding-bottom: 15px;
+            text-align: left;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        tfoot th,
+        tfoot td {
+            color: rgba(0, 0, 0, .5);
+        }
+    }
+
+    table.table-bordered {
+        margin-top: -1px;
+
+        & td,
+        & th {
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, .05);
+        }
+        & caption {
+            padding-left: 1.2rem;
+        }
+    }
+    table.table-bordered,
+    table.table-stripped {
+        & td,
+        & th {
+            &:first-child {
+                padding-left: 1.2rem;
+            }
+            &:last-child {
+                padding-right: 1.2rem;
+            }
+        }
+    }
+    table.table-stripped tbody tr:nth-child(odd) td {
+        background: #f8f8f8;;
+    }
+
+    @media (max-width: @breakpoint-small) {
+
+        table.table-responsive {
+
+            border: 0;
+
+            & thead {
+                display: none;
+            }
+            & tr {
+                display: block;
+                border-bottom: 2px solid rgba(0, 0, 0, .3);
+            }
+
+            & td,
+            & td:last-child,
+            & td:first-child {
+                display: block;
+                text-align: right;
+                padding: 1rem;
+            }
+
+            &.table-flat td {
+                padding: 0;
+            }
+
+            &.table-bordered td:last-child,
+            & td:last-child {
+                border-bottom: 0;
+            }
+
+            & td:before {
+                content: attr(data-label);
+                float: left;
+                text-transform: uppercase;
+                font-size: 1rem;
+                font-weight: bold;
+                line-height: 2;
+            }
+        }
+    }
+}

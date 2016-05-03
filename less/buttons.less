@@ -1,0 +1,126 @@
+/*
+ * Buttons
+ */
+.elf {
+    .btn,
+    button {
+        display: inline-block;
+
+        padding: @btn-base-paddings;
+        outline: none;
+        border: @border-base-width solid @color-default;
+        border-radius: @btn-base-radius;
+        background: @color-default;
+
+        box-sizing: border-box;
+
+        color: @color-dark;
+        font-size: @font-base-size;
+        font-family: @font-family;
+        font-weight: normal;
+        white-space: nowrap;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: top;
+        cursor: pointer;
+        
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+        transition: all 300ms ease;
+
+        &:hover {
+            background-color: lighten(@color-default, 5%);
+        }
+        &:active {
+            background-color: darken(@color-default, 5%);
+        }
+        &::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+        &[disabled] {
+            cursor: not-allowed;
+            box-shadow: none;
+            opacity: 0.4;
+        }
+        
+        &.round {
+            border-radius: @btn-round-radius;
+        }
+
+        &.small {
+            padding: @btn-small-paddings;
+            &.thick {
+                padding: @btn-small-thick-paddings;
+            }
+        }
+
+        &.large {
+            padding: @btn-large-paddings;
+            font-size: @font-large-size;
+            &.thick {
+                padding: @btn-large-thick-paddings;
+            }
+        }
+
+        &.ghost-light {
+            background: none;
+            color: @color-white;
+            &:hover {
+                background-color: darken(@color-white, 5%);
+                border-color: darken(@color-white, 5%);
+                color: @color-dark;
+            }
+            &:active {
+                background-color: darken(@color-white, 15%);
+                border-color: darken(@color-white, 15%);
+                color: @color-dark;
+            }
+        }
+
+        &.ghost-dark {
+            background: none;
+            color: @color-dark;
+            border-color: @color-dark;
+            &:hover {
+                background-color: lighten(@color-dark, 10%);
+                border-color: lighten(@color-dark, 5%);
+                color: @color-white;
+            }
+            &:active {
+                background-color: darken(@color-dark, 5%);
+                border-color: darken(@color-dark, 5%);
+                color: @color-white;
+            }
+        }
+
+        &.thick {
+            padding: @btn-base-thick-paddings;
+            border-width: @border-thick-width;
+            font-weight: bold;
+        }
+    }
+}
+
+.btn-group {
+    .clearfix;
+
+    display: inline-block;
+    vertical-align: bottom;
+
+    & .btn,
+    & button {
+        float: left;
+        margin-left: -1px;
+        border-radius: 0;
+        &:first-child {
+            border-radius: @btn-base-radius 0 0 @btn-base-radius;
+        }
+        &:last-child {
+            border-radius: 0 @btn-base-radius @btn-base-radius 0;
+        }
+    }
+}

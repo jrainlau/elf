@@ -1,0 +1,5 @@
+/demo
+/highlight
+/node_modules
+.project
+gulpfile.js

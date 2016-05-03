@@ -1,0 +1,48 @@
+/*
+ * Blocks
+ */
+.elf {
+    .blocks-2 {
+        .blocks;
+        & > div { width: 50%;}
+    }
+    .blocks-3 {
+        .blocks;
+        & > div { width: 33.3%;}
+    }
+    .blocks-4 {
+        .blocks;
+        & > div { width: 25%;}
+    }
+    .blocks-5 {
+        .blocks;
+        & > div { width: 20%;}
+    }
+    .blocks-6 {
+        .blocks;
+        & > div { width: 16.6%;}
+    }
+
+    @media (max-width: @breakpoint-small) {
+        .blocks-2 {
+            display: block;
+            & > div { width: 100%;}
+        }
+        .blocks-3 {
+            display: block;
+            & > div { width: 100%;}
+        }
+        .blocks-4 {
+            display: block;
+            & > div { width: 100%;}
+        }
+        .blocks-5 {
+            display: block;
+            & > div { width: 100%;}
+        }
+        .blocks-6 {
+            display: block;
+            & > div { width: 100%;}
+        }
+    }
+}

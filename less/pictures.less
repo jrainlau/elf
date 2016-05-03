@@ -1,0 +1,40 @@
+/*
+ * Pictures
+ */
+.elf {
+    .pics-contain {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        img {
+            object-fit: contain;
+            -o-object-fit: contain;
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .pics-center {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        img {
+            object-fit: cover;
+            -o-object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
