@@ -11,7 +11,7 @@
     left: -10px;
     height: 110%;
     width: 110%;
-    background: url('../images/ice-forest.jpg') no-repeat;
+    background: url('../images/ice-forest.min.jpg') no-repeat;
     background-size: cover;
     z-index: 0;
 }

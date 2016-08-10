@@ -151,6 +151,12 @@
             var cover = document.getElementById('elf-cover'),
                 bg = document.getElementById('elf-cover-bg')
 
+            var img = new Image();
+            img.src = './images/ice-forest.jpg'
+            img.onload = function () {
+                bg.style.backgroundImage = "url(./images/ice-forest.jpg)"
+            }
+
             var bgLeft = 0,
                 bgTop = 0
 
